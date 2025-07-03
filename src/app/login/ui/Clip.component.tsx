@@ -13,7 +13,7 @@ export function Clip() {
             className="w-full max-w-[566px] h-auto"
           />
         </div>
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 flex flex-col justify-center px-[4rem]">
           <Typography
             variant="heading3"
             weight="semibold"
@@ -22,22 +22,28 @@ export function Clip() {
             Esta herramienta te permite:
           </Typography>
           <ul className="text-[#ECE4FF]">
-            <li className="flex items-stretch">
-              <DirectRight />
+            <li className="flex  items-start gap-2">
+              <span className="mt-1">
+                <DirectRight />
+              </span>
               <Typography variant="bodyL" weight="medium">
                 Gestionar las solicitudes de los clientes de forma eficiente y
                 sencilla.
               </Typography>
             </li>
-            <li className="flex items-stretch">
-              <DirectRight />
+            <li className="flex items-start gap-2">
+              <span className="mt-1">
+                <DirectRight />
+              </span>
               <Typography variant="bodyL" weight="medium">
                 Visualizar las transacciones activas y consultar todas las
                 realizadas en el último mes dependiendo el rol.
               </Typography>
             </li>
-            <li className="flex items-stretch">
-              <DirectRight />
+            <li className="flex items-start gap-2">
+              <span className="mt-1">
+                <DirectRight />
+              </span>
               <Typography variant="bodyL" weight="medium">
                 Ver el estado actualizado de cada transacción dependiendo el
                 rol.

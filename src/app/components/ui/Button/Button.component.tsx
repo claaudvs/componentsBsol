@@ -61,11 +61,12 @@ Button.displayName = 'Button'
 export default Button
 
 const variantStyles: Record<Variant, string> = {
-  primary: 'bg-[#5C00E0] text-white hover:bg-[#4400A8]',
-  secondary: 'bg-[#EDE9FE] text-[#5C00E0] hover:bg-[#d7d2f4]',
-  tertiary: 'bg-transparent text-[#5C00E0] hover:underline',
-  destructive: 'bg-[#D60000] text-white hover:bg-[#b40000]',
-}
+  primary: "bg-[#5C00E0] text-white hover:bg-[#4400A8]",
+  secondary: "bg-[#EDE9FE] text-[#5C00E0] hover:bg-[#d7d2f4]",
+  tertiary:
+    "bg-transparent text-(--purple-200) border border-(--purple-200) hover:underline hover:bg-(--purple-200)",
+  destructive: "bg-[#D60000] text-white hover:bg-[#b40000]",
+};
 
 const sizeStyles: Record<Size, string> = {
   sm: 'text-sm px-3 py-1.5',
