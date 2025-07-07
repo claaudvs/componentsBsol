@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -11,10 +11,10 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
+const roboto = Roboto({ subsets: ['latin'], weight: ['400', '700'] })
 export const metadata: Metadata = {
-  title: "Mesa de dinero",
-  description: "Trading",
+  title: 'Next.js Metadata Demo',
+  description: 'Demostración de uso de Metadata API en Next.js 15',
 };
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${roboto.className}} antialiased`}>
         {children}
       </body>
     </html>
